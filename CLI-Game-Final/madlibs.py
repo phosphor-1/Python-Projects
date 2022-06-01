@@ -11,7 +11,7 @@ print("------------------------------")
 print("Mad Libs: Write Your Own Story")
 print("------------------------------")
 
-    # Story about an Epic Hacker!     
+# Story about an Epic Hacker!     
 def hackerstory():
         print("Hacker Story")
         name1 = input("Name: ")
@@ -94,7 +94,7 @@ def hackerstory():
         time.sleep(5)
         print("Unfortunately, he was arrested in the parking lot because he didn't check for cameras and burned his own operation")
 
-    # Story about wilderness survival
+# Story about wilderness survival
 def survivalstory():
     print("Survival Story")
     print("Coming Soon!")
@@ -146,10 +146,5 @@ def main():
         elif choice == "6":
             chooserandomstory()
 
-# Allows user to replay with another story
-while True:
-    main()
-    if input("Would you like to write another story? (Y/N)").strip().upper() != 'Y':
-    break    
-    
+
 
