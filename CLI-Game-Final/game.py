@@ -1,7 +1,5 @@
-# Main file, allows to choose which game to play
-import time
-import madlibs as ml
-
+1# Main file, allows to choose which game to play
+import time, madlibs
 
 def play():
     
@@ -15,7 +13,7 @@ def play():
     if choice == "1":
         print("-----Loading Mad Libs-----")
         time.sleep(5)
-        ml.main
+        madlibs.runthis()
         
     elif choice == "2":
         print("Coming Soon!")

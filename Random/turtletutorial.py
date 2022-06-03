@@ -1,6 +1,6 @@
 import turtle
 
-colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
 
 t = turtle.Pen()
 

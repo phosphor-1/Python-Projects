@@ -1,5 +1,4 @@
 import time, random
-
 """
     Mad Libs Mad Libs!!!!
     A selection of 5 epic stories to complete with your friends!
@@ -146,9 +145,11 @@ def main():
         elif choice == "6":
             chooserandomstory()
 
-
-while True:
-    main()
-    if input("Write another Story? (Y/N)").strip().upper() != 'Y':
-        break
+if __name__ == "__main__":
+    
+    while True:
+        main()
+        if input("Write another Story? (Y/N)").strip().upper() != 'Y':
+            break
+  
     
