@@ -4,7 +4,7 @@ import madlibs, adventure, draw # import game files for other games to call them
 
 def play():
     
-    list = "1. Mad Libs\n2. Choose Your Own Adventure\n3. Drawing Game"
+    list = "1. Mad Libs\n2. Choose Your Own Adventure\n3. Drawing Game\n4. Exit Game"
     
     print (list)
     
@@ -12,19 +12,29 @@ def play():
     
     if choice == "1":
         print("-----Loading Mad Libs-----")
-        time.sleep(5)
+        time.sleep(1)
+        for x in range(4):
+            print("-----LOADING-----")
+            time.sleep(1)
         madlibs.main()
         
     elif choice == "2":
         print("-----Loading Choose Your Own Adventure-----")
-        time.sleep(5)
+        time.sleep(1)
+        for x in range(4):
+            print("-----LOADING-----")
+            time.sleep(1)
         adventure.main()
     
     elif choice == "3":
-        print("Coming Soon")
         print("-----Loading Drawing Game-----")
-        time.sleep(5)
+        time.sleep(1)
+        for x in range(4):
+            print("-----LOADING-----")
+            time.sleep(1)
         draw.main()
+    elif choice == "4":
+        exit
         
 
 if __name__ == "__main__":
