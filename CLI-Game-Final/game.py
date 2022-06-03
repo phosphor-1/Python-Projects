@@ -1,5 +1,6 @@
 # Main file, allows to choose which game to play
-import time, madlibs
+import time
+import madlibs, adventure, draw # import game files for other games to call them later
 
 def play():
     
@@ -15,10 +16,15 @@ def play():
         madlibs.main()
         
     elif choice == "2":
-        print("Coming Soon!")
+        print("-----Loading Choose Your Own Adventure-----")
+        time.sleep(5)
+        adventure.main()
     
     elif choice == "3":
         print("Coming Soon")
+        print("-----Loading Drawing Game-----")
+        time.sleep(5)
+        draw.main()
         
 
 if __name__ == "__main__":
