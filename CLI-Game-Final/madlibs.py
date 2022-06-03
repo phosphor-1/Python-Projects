@@ -1,11 +1,5 @@
-import time, random
-"""
-    Mad Libs Mad Libs!!!!
-    A selection of 5 epic stories to complete with your friends!
-    User input gets printed out within a sentence and makes da funny
-    www.github.com/phosphor-1 for more shitty coding projects
-"""
-    
+import time, random, game
+
 print("------------------------------")
 print("Mad Libs: Write Your Own Story")
 print("------------------------------")
@@ -92,36 +86,42 @@ def hackerstory():
         print("With this", noun4, " of luck, he was able to get the flash drive and leave the facility")
         time.sleep(5)
         print("Unfortunately, he was arrested in the parking lot because he didn't check for cameras and burned his own operation")
+        main()
 
 # Story about wilderness survival
 def survivalstory():
     print("Survival Story")
     print("Coming Soon!")
+    main()
 
 # Spooky Story anyone??
 def horrorstory():
         print("Horror Story")
         print("Coming Soon!")
+        main()
     
 # Alien Story
 def scifistory():
         print("Sci Fi Story")
         print("Coming Soon!")
+        main()
 
 # Story inspired by a friend :)
 def dinosaurstory():
         print("Dinosaur Story")
         print("Coming Soon")
+        main()
     
 # Uses random.choice to pick a story from a list of functions
 def chooserandomstory():
+    
         randlist = [hackerstory, survivalstory, horrorstory, scifistory, dinosaurstory]
         random.choice(randlist)()
  
 # Where the good stuff is, includes initial list of stories with input
 def main():
-    
-        list = "1. Hacker Story\n2. Survival Story\n3. Horror Story\n4. Science Fiction Story\n5. Dinosaur Story\n6. I can't decide, choose for me!!!"
+    while True:    
+        list = "1. Hacker Story\n2. Survival Story\n3. Horror Story\n4. Science Fiction Story\n5. Dinosaur Story\n6. I can't decide, choose for me!!!\n7. Exit to Main Menu"
 
         print(list)
  
@@ -144,12 +144,11 @@ def main():
         
         elif choice == "6":
             chooserandomstory()
+        elif choice == "7":
+            game.play()
 
-if __name__ == "__main__":
-    
-    while True:
-        main()
-        if input("Write another Story? (Y/N)").strip().upper() != 'Y':
-            break
+if __name__ == "__main__": 
+   main()
   
-    
+#i like pie do you like pie yumyuum bebbperfeoif
+   
