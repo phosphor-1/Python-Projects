@@ -147,4 +147,8 @@ def main():
             chooserandomstory()
 
 
-
+while True:
+    main()
+    if input("Write another Story? (Y/N)").strip().upper() != 'Y':
+        break
+    
