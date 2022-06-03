@@ -3,7 +3,6 @@ import time, madlibs
 
 def play():
     
-    
     list = "1. Mad Libs\n2. Choose Your Own Adventure\n3. Drawing Game"
     
     print (list)
