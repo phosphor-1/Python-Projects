@@ -1,9 +1,5 @@
 import time, random, game
 
-print("------------------------------")
-print("Mad Libs: Write Your Own Story")
-print("------------------------------")
-
 # Story about an Epic Hacker!     
 def hackerstory():
         print("Hacker Story")
@@ -148,7 +144,10 @@ def main():
             game.play()
 
 if __name__ == "__main__": 
-   main()
+    print("------------------------------")
+    print("Mad Libs: Write Your Own Story")
+    print("------------------------------")
+    main()
   
 #i like pie do you like pie yumyuum bebbperfeoif
    

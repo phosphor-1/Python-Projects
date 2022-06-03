@@ -1,6 +1,5 @@
 import game
-import turtle
-
+import turtle, random
 
 def triangle():
     colors = ['red', 'blue', 'green']
@@ -14,6 +13,7 @@ def triangle():
         t.width(x//100+1)
         t.forward(x)
         t.left(119)
+    
     
     main()    
 
@@ -39,6 +39,7 @@ def pentagon():
     
     turtle.bgcolor('black') 
     
+    
     for x in range(360):
         t.pencolor(colors[x%5])
         t.width(x//100+1)
@@ -53,6 +54,7 @@ def hexagon():
     t = turtle.Pen()
 
     turtle.bgcolor('black')
+    
 
     for x in range(360):
         t.pencolor(colors[x%6])
@@ -62,13 +64,13 @@ def hexagon():
     
     main()   
      
-
 def heptagon():
     colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'cyan']
     
     t = turtle.Pen()
     
     turtle.bgcolor('black') 
+    
     
     for x in range(360):
         t.pencolor(colors[x%7])
@@ -85,6 +87,7 @@ def octagon():
     
     turtle.bgcolor('black') 
     
+    
     for x in range(360):
         t.pencolor(colors[x%8])
         t.width(x//100+1)
@@ -92,11 +95,19 @@ def octagon():
         t.left(46.5)
     
     main()    
+
+def randomshape():
     
+        randlist = [triangle, square, pentagon, hexagon, heptagon, octagon]
+        random.choice(randlist)()  
 
 def main():
     
-    list = "1. Triangle\n2. Square\n3. Pentagon\n4. Hexagon\n5. Heptagon\n6. Octagon\n7. Return to Main Menu"
+    print("======================")
+    print("== Draw Cool Shapes ==")
+    print("======================")
+    
+    list = "1. Triangle\n2. Square\n3. Pentagon\n4. Hexagon\n5. Heptagon\n6. Octagon\n7.Random!\n8. Return to Main Menu"
     
     print(list)
     
@@ -115,6 +126,8 @@ def main():
     elif choose == "6":
         octagon()
     elif choose == "7":
+        randomshape()
+    elif choose == "8":
         game.play()
 
 if __name__ == "__main__":
