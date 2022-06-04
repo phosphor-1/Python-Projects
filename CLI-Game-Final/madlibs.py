@@ -114,8 +114,11 @@ def chooserandomstory():
         randlist = [hackerstory, survivalstory, horrorstory, scifistory, dinosaurstory]
         random.choice(randlist)()
  
-# Where the good stuff is, includes initial list of stories with input
+# Main Function
 def main():
+    print("==============================")
+    print("Mad Libs: Write Your Own Story")
+    print("==============================")
     while True:    
         list = "1. Hacker Story\n2. Survival Story\n3. Horror Story\n4. Science Fiction Story\n5. Dinosaur Story\n6. I can't decide, choose for me!!!\n7. Exit to Main Menu"
 
@@ -140,13 +143,11 @@ def main():
         
         elif choice == "6":
             chooserandomstory()
+       
         elif choice == "7":
             game.play()
 
 if __name__ == "__main__": 
-    print("------------------------------")
-    print("Mad Libs: Write Your Own Story")
-    print("------------------------------")
     main()
   
 #i like pie do you like pie yumyuum bebbperfeoif

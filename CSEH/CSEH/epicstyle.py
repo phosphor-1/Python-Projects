@@ -8,7 +8,7 @@ Created on Thu May  5 16:25:07 2022
 import random
 import time
 
-info = ("This function calculates area of a rectangle") //lol no it doesnt
+info = ("This function calculates area of a rectangle") #lol no it doesnt
 print (info)
 
 length = int(input("Enter the width: "))
