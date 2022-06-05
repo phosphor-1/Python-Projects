@@ -13,7 +13,7 @@ def triangle():
         t.width(x//100+1)
         t.forward(x)
         t.left(119)
-    
+    t.done()
     
     main()    
 
@@ -29,6 +29,7 @@ def square():
         t.width(x//100+1)
         t.forward(x)
         t.left(89)
+    t.done()
     
     main()    
 
@@ -39,12 +40,12 @@ def pentagon():
     
     turtle.bgcolor('black') 
     
-    
     for x in range(360):
         t.pencolor(colors[x%5])
         t.width(x//100+1)
         t.forward(x)
         t.left(71)
+    t.done()
     
     main()    
 
@@ -54,13 +55,13 @@ def hexagon():
     t = turtle.Pen()
 
     turtle.bgcolor('black')
-    
 
     for x in range(360):
         t.pencolor(colors[x%6])
         t.width(x//100+1)
         t.forward(x)
         t.left(60)
+    t.done()
     
     main()   
      
@@ -71,15 +72,15 @@ def heptagon():
     
     turtle.bgcolor('black') 
     
-    
     for x in range(360):
         t.pencolor(colors[x%7])
         t.width(x//100+1)
         t.forward(x)
         t.left(50.42)
+    t.done()
     
-    main()    
-
+    main()
+              
 def octagon():
     colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'cyan', 'lightgreen']
     
@@ -87,12 +88,12 @@ def octagon():
     
     turtle.bgcolor('black') 
     
-    
     for x in range(360):
         t.pencolor(colors[x%8])
         t.width(x//100+1)
         t.forward(x)
         t.left(46.5)
+    t.done()
     
     main()    
 
