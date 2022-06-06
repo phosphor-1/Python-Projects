@@ -13,7 +13,7 @@ def triangle():
         t.width(x//100+1)
         t.forward(x)
         t.left(119)
-    t.done()
+    t.bye()
     
     main()    
 
@@ -29,7 +29,7 @@ def square():
         t.width(x//100+1)
         t.forward(x)
         t.left(89)
-    t.done()
+    t.bye()
     
     main()    
 
@@ -45,8 +45,8 @@ def pentagon():
         t.width(x//100+1)
         t.forward(x)
         t.left(71)
-    t.done()
-    
+    t.bye()
+
     main()    
 
 def hexagon():
@@ -61,7 +61,7 @@ def hexagon():
         t.width(x//100+1)
         t.forward(x)
         t.left(60)
-    t.done()
+    t.bye()
     
     main()   
      
@@ -77,7 +77,7 @@ def heptagon():
         t.width(x//100+1)
         t.forward(x)
         t.left(50.42)
-    t.done()
+    t.bye()
     
     main()
               
@@ -93,7 +93,7 @@ def octagon():
         t.width(x//100+1)
         t.forward(x)
         t.left(46.5)
-    t.done()
+    t.bye()
     
     main()    
 
