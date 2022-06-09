@@ -27,7 +27,7 @@ def play():
         adventure.main()
     
     elif choice == "3":
-        print("-----Loading Shape Visualizer-----")
+        print("-----Loading Drawing Game-----")
         time.sleep(1)
         for x in range(4):
             print("-----LOADING-----")
